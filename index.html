@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Login System</title>
+    <!--^ Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--* Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--& Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--! Main CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/DiaaEldeen.ico" type="image/x-icon">
+  </head>
+
+  <body id="loginPage" class="login-body">
+    <section
+      id="loginSection"
+      class="d-flex justify-content-center align-items-center min-vh-100"
+    >
+      <div class="login-card p-4 p-md-5 text-center">
+        <h1 class="neon-text mb-4">Smart Login</h1>
+        <form class="text-start">
+          <div class="mb-3">
+            <label for="userEmail" class="form-label text-white-50"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="userEmail"
+              class="form-control form-control-lg custom-input"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <div class="mb-4">
+            <label for="userPassword" class="form-label text-white-50"
+              >Password</label
+            >
+            <input
+              type="password"
+              id="userPassword"
+              class="form-control form-control-lg custom-input"
+              placeholder="Enter your password"
+            />
+          </div>
+
+          <button
+            type="button"
+            id="loginBtn"
+            class="btn neon-btn w-100 py-2 fs-5"
+          >
+            <i class="fas fa-sign-in-alt me-2"></i>Login
+          </button>
+        </form>
+
+        <div class="text-white-50 mt-4">
+          Don’t have an account?
+          <a
+            href="register.html"
+            class="text-cyan text-decoration-none fw-semibold"
+          >
+            Sign Up
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!--! Validation Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content neon-modal">
+          <div class="modal-header border-0">
+            <h5 class="modal-title neon-text">
+              <i class="fas fa-bolt me-2"></i>Login Error
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-glow-box">
+              <p class="text-white-50">Oops! Something went wrong:</p>
+              <ul class="list-unstyled text-start mb-0">
+                <li>
+                  <i class="fas fa-times-circle me-2 text-danger"></i>Invalid
+                  login details
+                </li>
+                <li>
+                  <i class="fas fa-times-circle me-2 text-danger"></i>Please
+                  check your email or password
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--^ Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--^ Main JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
